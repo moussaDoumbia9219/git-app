@@ -24,7 +24,7 @@ export default {
   mixins: [octokitMixin],
   async mounted() {
     const octokit = this.createOctokitClient();
-    const { data: repos } = await octokit.request("/moussaDoumbia9219/repos");
+    const { data: repos } = await octokit.request("/user/repos");
     this.repos = repos;
   },
 };
